@@ -1,0 +1,87 @@
+WARNING: Dataset not found, nonexistent paths: ['C:\\Users\\Nguyen Minh An\\Desktop\\datasets\\SKU-110K\\val.txt']
+Downloading http://trax-geometry.s3.amazonaws.com/cvpr_challenge/SKU110K_fixed.tar.gz to ..\datasets\SKU110K_fixed.tar.gz...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  2%|█▏                                                                          | 178M/11.4G [01:52<2:00:07, 1.67MB/s]
+Traceback (most recent call last):
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\train.py", line 636, in <module>
+    main(opt)
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\train.py", line 533, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\train.py", line 95, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\utils\loggers\__init__.py", line 73, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\utils\loggers\wandb\wandb_utils.py", line 180, in __init__
+    self.data_dict = check_wandb_dataset(opt.data)
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\utils\loggers\wandb\wandb_utils.py", line 56, in check_wandb_dataset
+    return check_dataset(data_file)
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\utils\general.py", line 413, in check_dataset
+    r = exec(s, {'yaml': data})  # return None
+  File "<string>", line 9, in <module>
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\utils\general.py", line 459, in download
+    download_one(u, dir)
+  File "C:\Users\Nguyen Minh An\Desktop\yolov5-master\utils\general.py", line 440, in download_one
+    torch.hub.download_url_to_file(url, f, progress=True)  # torch download
+  File "C:\Users\Nguyen Minh An\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\hub.py", line 474, in download_url_to_file
+    buffer = u.read(8192)
+  File "C:\Users\Nguyen Minh An\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\Nguyen Minh An\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\Nguyen Minh An\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt

@@ -1,0 +1,29 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.9.6",
+    "heartbeatAt": "2022-01-03T17:42:35.897347",
+    "startedAt": "2022-01-03T17:42:33.919023",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060 3GB",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "xView.yaml",
+        "--weights",
+        "yolov5s.pt"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Nguyen Minh An\\Desktop\\yolov5-master\\train.py",
+    "codePath": "train.py",
+    "host": "DESKTOP-7I3LBF0",
+    "username": "Nguyen Minh An",
+    "executable": "C:\\Users\\Nguyen Minh An\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+}
